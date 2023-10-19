@@ -10,9 +10,17 @@ int main()
 {
     while (true) {
 
+        do{
+            printf("\nLoop initial value: \n");
+            int nn = scanf("%d", &nn);
+            printf("\nEnter count: \n");
+            int count = scanf("%d", &count);
+            printf("\nEnter delay: \n");
+            int delayVal = scanf("\n%d", &delayVal);
+        } while();
+
         //For-Loop
-        volatile int n;
-        for (n=0; n<=7; n = n+1) {
+        for (int n=1; n<=7; n = n+2) {
             printf("n=%d\n", n);
             leds = n;
             wait_us(250000);
